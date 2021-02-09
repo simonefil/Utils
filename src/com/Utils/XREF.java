@@ -1,28 +1,30 @@
+package com.Utils;
+
 //*******************************************************************************************
-//XOUT CLASS
+//com.Utils.XREF CLASS
 //*******************************************************************************************
 
-public class XOUT<T>
+public class XREF<T>
 {
     public XOBJ<T> Obj = null;
 
-    public XOUT(T value)
+    public XREF(T value)
     {
         Obj = new XOBJ<T>(value);
     }
 
-    public XOUT()
+    public XREF()
     {
         Obj = new XOBJ<T>();
     }
 
     public XOUT<T> Out()
     {
-        return(this);
+        return(Obj.Out());
     }
 
     public XREF<T> Ref()
     {
-        return(Obj.Ref());
+        return(this);
     }
-};
+}

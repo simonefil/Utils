@@ -1,4 +1,4 @@
-package Streams;
+package com.Utils.Streams;
 
 import java.io.IOException;
 import java.io.InputStream;

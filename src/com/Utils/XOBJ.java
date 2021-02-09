@@ -1,21 +1,23 @@
+package com.Utils;
+
 //*******************************************************************************************
-//XOBJ CLASS
+//com.Utils.XOBJ CLASS
 //*******************************************************************************************
 /*
-    XOBJ is the base object that houses the value. XREF and XOUT are classes that
-    internally use XOBJ. The classes XOBJ, XREF, and XOUT have methods that allow
-    the object to be used as XREF or XOUT parameter; This is important, because
+    com.Utils.XOBJ is the base object that houses the value. com.Utils.XREF and com.Utils.XOUT are classes that
+    internally use com.Utils.XOBJ. The classes com.Utils.XOBJ, com.Utils.XREF, and com.Utils.XOUT have methods that allow
+    the object to be used as com.Utils.XREF or com.Utils.XOUT parameter; This is important, because
     objects of these types are interchangeable.
 
     See Method:
        XXX.Ref()
        XXX.Out()
 
-    The below example shows how to use XOBJ, XREF, and XOUT;
+    The below example shows how to use com.Utils.XOBJ, com.Utils.XREF, and com.Utils.XOUT;
     //
     // Reference parameter example
     //
-    void AddToTotal(int a, XREF<Integer> Total)
+    void AddToTotal(int a, com.Utils.XREF<Integer> Total)
     {
        Total.Obj.Value += a;
     }
@@ -23,17 +25,17 @@
     //
     // out parameter example
     //
-    void Add(int a, int b, XOUT<Integer> ParmOut)
+    void Add(int a, int b, com.Utils.XOUT<Integer> ParmOut)
     {
        ParmOut.Obj.Value = a+b;
     }
 
     //
-    // XOBJ example
+    // com.Utils.XOBJ example
     //
     int XObjTest()
     {
-       XOBJ<Integer> Total = new XOBJ<>(0);
+       com.Utils.XOBJ<Integer> Total = new com.Utils.XOBJ<>(0);
        Add(1, 2, Total.Out());    // Example of using out parameter
        AddToTotal(1,Total.Ref()); // Example of using ref parameter
        return(Total.Value);
@@ -54,7 +56,7 @@ public class XOBJ<T> {
 
     //
     // Method: Ref()
-    // Purpose: returns a Reference Parameter object using the XOBJ value
+    // Purpose: returns a Reference Parameter object using the com.Utils.XOBJ value
     //
     public XREF<T> Ref()
     {
@@ -65,7 +67,7 @@ public class XOBJ<T> {
 
     //
     // Method: Out()
-    // Purpose: returns an Out Parameter Object using the XOBJ value
+    // Purpose: returns an Out Parameter Object using the com.Utils.XOBJ value
     //
     public XOUT<T> Out()
     {

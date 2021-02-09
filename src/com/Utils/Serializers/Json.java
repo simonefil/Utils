@@ -1,4 +1,4 @@
-package Serializers;
+package com.Utils.Serializers;
 
 import java.io.IOException;
 import java.io.InputStream;

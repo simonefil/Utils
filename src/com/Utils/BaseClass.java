@@ -1,3 +1,5 @@
+package com.Utils;
+
 public abstract class BaseClass {
 
     public boolean HasError;
