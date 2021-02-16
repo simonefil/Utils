@@ -1,12 +1,12 @@
 <component name="ArtifactManager">
   <artifact type="jar" name="Utils:jar">
-    <output-path>$PROJECT_DIR$/out/artifacts/Utils_jar</output-path>
+    <output-path>$PROJECT_DIR$/../YCLD_Server/lib</output-path>
     <root id="archive" name="Utils.jar">
       <element id="module-output" name="Utils" />
-      <element id="extracted-dir" path="$USER_HOME$/Desktop/jackson-annotations-2.12.1.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="$USER_HOME$/Desktop/jackson-dataformat-xml-2.12.1.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="$USER_HOME$/Desktop/jackson-core-2.12.1.jar" path-in-jar="/" />
-      <element id="extracted-dir" path="$USER_HOME$/Desktop/jackson-databind-2.12.1.jar" path-in-jar="/" />
+      <element id="library" level="project" name="jackson-annotations-2.12.1" />
+      <element id="library" level="project" name="jackson-core-2.12.1" />
+      <element id="library" level="project" name="jackson-databind-2.12.1" />
+      <element id="library" level="project" name="jackson-dataformat-xml-2.12.1" />
     </root>
   </artifact>
 </component>

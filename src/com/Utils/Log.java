@@ -50,7 +50,7 @@ public class Log {
     public static void Initialize(Optional<String> parAppName, Optional<String> parDebugFile, Optional<Integer> parProcessID) {
         appName = parAppName.orElse("Java");
         debugFile = parDebugFile.orElse("");
-        processID = parProcessID.orElse(6666);
+        processID = parProcessID.orElse(666);
     }
 
     /**
