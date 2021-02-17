@@ -21,6 +21,15 @@ public class $<T> {
         this.Value = parValue;
     }
 
+    public $<T> ref() {
+        return this;
+    }
+
+    public $<T> out() {
+        this.Value = null;
+        return this;
+    }
+
     @Override
     public String toString() {
         if (this.Value == null)
