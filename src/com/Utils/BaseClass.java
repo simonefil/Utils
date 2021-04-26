@@ -1,17 +1,22 @@
 package com.Utils;
 
-public abstract class BaseClass {
+public abstract class BaseClass
+{
 
-    public boolean HasError;
-    public String ErrorDescription;
+	public boolean hasError;
+	public String errorDescription;
 
-    public BaseClass() {
-        this.HasError = false;
-        this.ErrorDescription = "";
-    }
+	public BaseClass()
+	{
+		this.hasError = false;
+		this.errorDescription = "";
+	}
 
-    protected void pSetError(String parMessage) {
-        this.HasError = true;
-        this.ErrorDescription = parMessage;
-    }
+	protected void setError(String parMessage)
+	{
+		this.hasError = true;
+		this.errorDescription = parMessage;
+		if (Log.isInitialized)
+			Log.add(parMessage, Log.LogType.Error);
+	}
 }

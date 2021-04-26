@@ -2,24 +2,29 @@ package com.Utils;
 
 import java.io.File;
 
-public class Dir {
+public class Dir
+{
 
-    public static String combine(String parRootDir, String... parDirs){
-        String tFinalString = "";
+	public static String combine(String parRootDir, String... parDirs)
+	{
+		String finalString = "";
 
-        tFinalString = parRootDir;
+		finalString = parRootDir;
 
-        for (String tSubDir : parDirs) {
-            tFinalString += "/" + tSubDir;
-        }
+		for (String subDir : parDirs)
+		{
+			finalString += "/" + subDir;
+		}
 
-        if (File.separatorChar == '\\') {
-            tFinalString = tFinalString.replace("/", "\\");
-        }
-        else {
-            tFinalString = tFinalString.replace('\\', '/');
-        }
+		if (File.separatorChar == '\\')
+		{
+			finalString = finalString.replace("/", "\\");
+		}
+		else
+                {
+			finalString = finalString.replace('\\', '/');
+		}
 
-        return tFinalString;
-    }
+		return finalString;
+	}
 }
